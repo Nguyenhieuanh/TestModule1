@@ -1,5 +1,5 @@
 function fibonacci(number) {
-    let a = 1;
+    let a = 0;
     let b = 1;
     let tmp, i;
     if (number < 0) {
