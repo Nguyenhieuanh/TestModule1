@@ -1,4 +1,4 @@
-function tryRemoveFromArray(x, array) {
+function tryRemoveFromArray(array,x) {
     for (let i = 0; i < array.length; i++) {
         if (x === array [i]) {
             array.splice(i, 1);
