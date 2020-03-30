@@ -22,7 +22,5 @@ function isFibonacci(value) {
     while (value > fibonacci(i)) {
         ++i;
     }
-    if (value == fibonacci(i))
-        return true;
-    return false;
+    return value === fibonacci(i);
 }
