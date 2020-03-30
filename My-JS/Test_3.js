@@ -1,20 +1,20 @@
 function fibonacci(number) {
-    let f0 = 1;
-    let f1 = 1;
-    let f, i;
+    let a = 1;
+    let b = 1;
+    let tmp, i;
     if (number < 0) {
-        return -1;
+        return false;
     }
     if (number < 2)
-        return 1;
+        return true;
     i = 1;
     while (i < number) {
-        f = f0 + f1;
-        f0 = f1;
-        f1 = f;
+        tmp = a + b;
+        a = b;
+        b = tmp;
         i++;
     }
-    return f;
+    return tmp;
 }
 
 function isFibonacci(value) {
